@@ -1,0 +1,33 @@
+.single-service {
+    height: 500px;
+    margin: 100px 25px;
+    padding: 10px 15px;
+    border: gray solid 1px;
+    box-shadow: rgb(202, 198, 198) 6px 6px 15px;
+    border-radius: 15px;
+}
+
+.single-service h5 {
+    color: #854fee;
+    padding-bottom: 10px;
+}
+
+.single-service img {
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.single-service p{
+    padding-top: 20px;
+    color: darkslategrey;
+}
+
+.single-service button {
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+    padding: 5px 30px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+}

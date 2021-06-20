@@ -1,9 +1,18 @@
 .main-header {
     margin-top: 150px;
     height: 80vh;
-    display: flex;
+    /* display: flex;
     justify-content: space-around;
-    align-items: center;
+    align-items: center; */
+}
+
+@media (min-width: 600px) {
+    .main-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 100px;
+    }
 }
 
 .header-text {

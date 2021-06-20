@@ -1,0 +1,34 @@
+.single-review {
+    /* margin-top: 200px; */
+}
+
+.customer-review {
+    /* height: 500px; */
+    margin: 20px 50px;
+    background-color: #c3f5ff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+.customer-review p {
+    font-family: cursive;
+}
+
+.customer-review h6 {
+    color: #4c22a1;
+    font-weight: bold;
+}
+
+@media (min-width: 768px){
+    .customer-review{
+        margin-top: 200px;
+    }
+}
+
+@media(max-width: 768px){
+    .customer-review:first-child{
+        margin-top: 230px;
+    }
+}

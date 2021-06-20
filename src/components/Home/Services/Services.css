@@ -1,0 +1,31 @@
+.all-services {
+    display: flex;
+    justify-content: space-around;
+    /* background-color: ghostwhite; */
+}
+
+.all-services h3 {
+    margin-top: 130px;
+    color: gray;
+}
+
+.all-services h1 {
+    color: #854fee;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .all-services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* @media (min-width: 768px) {
+    .all-services {
+        display: flex;
+        justify-content: space-around;
+    }
+} */

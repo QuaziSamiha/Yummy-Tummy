@@ -1,0 +1,43 @@
+.all-reviews {
+    background-image: url('../../../images/reviewBG4.jpg');
+    width: 100vw;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.all-reviews h1 {
+    color: #4c22a1;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+.all-reviews h4 {
+    color: #6071e0;
+    font-weight: 700;
+    font-size: 40px;
+    font-family: cursive;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .all-reviews {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
