@@ -1,6 +1,8 @@
 import React from 'react';
 import './Reviews.css';
 import ReviewDetail from '../ReviewDetail/ReviewDetail';
+import Story from '../Story/Story';
+import Employees from '../Employees/Employees';
 
 const allReview = [
     {
@@ -25,9 +27,12 @@ const Reviews = () => {
         <section className='all-reviews row'>
             <h4>Reviews</h4>
             <h1>HAPPY CUSTOMERS</h1>
-                {
-                    allReview.map((review, index) => <ReviewDetail key={index} reviewDetail={review} />)
-                }
+            {
+                allReview.map((review, index) => <ReviewDetail key={index} reviewDetail={review} />)
+            }
+
+            <Story />
+            <Employees />
         </section>
     );
 };

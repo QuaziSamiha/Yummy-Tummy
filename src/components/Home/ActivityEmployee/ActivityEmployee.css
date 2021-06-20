@@ -1,0 +1,17 @@
+.detail-info{
+    border: darkslategrey solid 1px;
+    border-radius: 15px;
+    box-shadow: grey 3px 3px 10px;
+    margin: 30px 15px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.detail-info img{
+    height: 180px;
+    width: 200px;
+}
+
+.detail-info p{
+    padding: 5px 15px;
+}
