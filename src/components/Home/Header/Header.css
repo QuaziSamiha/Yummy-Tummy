@@ -1,0 +1,10 @@
+/* * {
+    padding: 0;
+    margin: 0;
+} */
+
+.all-header {
+    width: 100%;
+    height: 650px;
+    background-image: linear-gradient(to left, #fff 79%, #c3f5ff 21%);
+}
