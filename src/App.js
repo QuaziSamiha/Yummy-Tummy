@@ -5,10 +5,20 @@ import {
   Route
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
+import Login from './components/Login/Login';
+import Admin from './components/Admin/Admin';
+import { createContext, useState } from 'react';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute';
+
+
+export const UserContext = createContext();
 
 function App() {
+
+  const [loggedInUser, setLoggedInUser] = useState({});
+
   return (
-    <div>
+    <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Router>
         <Switch>
           <Route path="/home">
@@ -17,13 +27,18 @@ function App() {
           <Route path="/users">
             {/* <Users /> */}
           </Route>
+          <PrivateRoute path='/admin'>
+            <Admin />
+          </PrivateRoute>
+          <Route path='/login'>
+            <Login />
+          </Route>
           <Route exact path="/">
-            {/* <Home /> */}
+            <Home />
           </Route>
         </Switch>
-
       </Router>
-    </div>
+    </UserContext.Provider>
   );
 }
 

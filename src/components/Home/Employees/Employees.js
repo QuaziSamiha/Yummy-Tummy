@@ -5,6 +5,7 @@ import cookingFood from '../../../images/chef.jpg';
 import packaging from '../../../images/packaging.jpg';
 import onWay from '../../../images/delivery-man.jpg';
 import deliver from '../../../images/delivery-man2.jpg';
+import cash from '../../../images/cash-on-delivery.jpg';
 import ActivityEmployee from '../ActivityEmployee/ActivityEmployee';
 
 const details = [
@@ -33,6 +34,11 @@ const details = [
         img: deliver,
         description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae alias labore repellendus earum, hic impedit.'
     },
+    {
+        title: 'Cash on Delivery',
+        img: cash,
+        description: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae alias labore repellendus earum, hic impedit.'
+    }
 ]
 
 const Employees = () => {
