@@ -1,0 +1,26 @@
+.footer-all {
+    background-color: ghostwhite;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-part {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.footer-part h6 {
+    font-weight: 700;
+    color: darkslategrey;
+}
+
+.footer-part p{
+    color: rgb(80, 78, 78);
+}
+
+.footer-icon{
+    font-size: 28px;
+    margin: 10px;
+    color: darkslategrey;
+}

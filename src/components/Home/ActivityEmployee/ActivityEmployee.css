@@ -7,11 +7,19 @@
     box-sizing: border-box;
 }
 
+.detail-info h5{
+    color: #4c22a1;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
 .detail-info img{
     height: 180px;
     width: 200px;
+    border-radius: 8px;
 }
 
 .detail-info p{
     padding: 5px 15px;
+    color: darkslategrey;
 }

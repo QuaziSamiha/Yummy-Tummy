@@ -3,6 +3,7 @@ import './Reviews.css';
 import ReviewDetail from '../ReviewDetail/ReviewDetail';
 import Story from '../Story/Story';
 import Employees from '../Employees/Employees';
+import Footer from '../../Shared/Footer/Footer';
 
 const allReview = [
     {
@@ -33,6 +34,7 @@ const Reviews = () => {
 
             <Story />
             <Employees />
+            <Footer />
         </section>
     );
 };
