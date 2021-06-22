@@ -1,40 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './Reviews.css';
 import ReviewDetail from '../ReviewDetail/ReviewDetail';
-import Story from '../Story/Story';
-import Employees from '../Employees/Employees';
-import Footer from '../../Shared/Footer/Footer';
-
-const allReview = [
-    {
-        img: '',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vel ratione. In quasi assumenda, officia corrupti corporis aliquid sequi voluptatum minima itaque nesciunt facere quae?',
-        name: 'Samiha Tasnim'
-    },
-    {
-        img: '',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vel ratione. In quasi assumenda, officia corrupti corporis aliquid sequi voluptatum minima itaque nesciunt facere quae?',
-        name: 'Asma Begum'
-    },
-    {
-        img: '',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, vel ratione. In quasi assumenda, officia corrupti corporis aliquid sequi voluptatum minima itaque nesciunt facere quae?',
-        name: 'Vondul Vai'
-    }
-]
 
 const Reviews = () => {
-    return (
-        <section className='all-reviews row'>
-            <h4>Reviews</h4>
-            <h1>HAPPY CUSTOMERS</h1>
-            {
-                allReview.map((review, index) => <ReviewDetail key={index} reviewDetail={review} />)
-            }
 
-            <Story />
-            <Employees />
-            <Footer />
+    const [allReview, setAllReview] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:5050/customerReviews')
+            .then(res => res.json())
+            .then(data => {
+                // console.log(data);
+                setAllReview(data);
+            })
+    }, [])
+
+    // console.log(allReview);
+    return (
+        <section className='all-reviews'>
+                <h4>Reviews</h4>
+                <h1>HAPPY CUSTOMERS</h1>
+                <div className='row reviews'>
+                    {
+                        allReview.map((review, index) => <ReviewDetail key={index} reviewDetail={review} />)
+                    }
+                </div>
         </section>
     );
 };

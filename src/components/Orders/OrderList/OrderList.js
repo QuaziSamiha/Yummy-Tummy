@@ -26,8 +26,8 @@ const Orders = () => {
                 {
                     orderList.length > 0 ?
                         <div>
-                            <h3 style={{ color: 'darkslategrey', textAlign: 'center' }}>Your Orders</h3>
-                            <div style={{ display: 'flex', justifyContent: 'space-around' }}>
+                            <h3 style={{ color: 'darkslategrey', textAlign: 'center', margin:'30px', fontWeight: 'bolder'}}>Your Cart</h3>
+                            <div className='row'>
                                 {
                                     orderList.map((food, index) => <OrderedFood key={index} food={food} />)
                                 }

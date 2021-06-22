@@ -22,3 +22,5 @@ const Story = () => {
 };
 
 export default Story;
+
+//  style={{marginTop: '500px'}}

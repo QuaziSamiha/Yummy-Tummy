@@ -1,10 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { UserContext } from '../../../../App';
 import './Food.css';
 
 const Food = ({ food }) => {
 
     const [loggedInUser, setLoggedInUser] = useContext(UserContext);
+    const [addToCart, setAddToCart] = useState(false);
 
     const handleBuyNow = (orderedFood, customer) => {
 
@@ -19,7 +20,7 @@ const Food = ({ food }) => {
         })
             .then(res => res.json())
             .then(success => {
-                if(success) {
+                if (success) {
                     alert('food added to your purchase list')
                 }
             })
@@ -30,7 +31,16 @@ const Food = ({ food }) => {
             <img src={food.foodImg} className='img-fluid' alt="" />
             <h6>{food.foodName}</h6>
             <p>Price: {food.price}</p>
-            <button onClick={() => handleBuyNow(food, loggedInUser)}>Buy Now</button>
+            <button onClick={() => {
+                handleBuyNow(food, loggedInUser);
+                setAddToCart(true);
+            }}>
+                Add to Cart
+            </button>
+
+            {
+                // addToCart === true ? <small>{food.foodName} added to cart</small> : <span></span>
+            }
         </div>
     );
 };

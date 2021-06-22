@@ -14,7 +14,7 @@ const Sidebar = () => {
                 <button className='customer-status'><img src={placeOrder} alt="" /> Place Order</button>
             </Link>
             <Link to='orderList' className='nav-link'>
-                <button className='customer-status'><img src={list} alt="" /> Order List</button>
+                <button className='customer-status'><img src={list} alt="" /> Your Cart</button>
             </Link>
             <Link to='/review' className='nav-link'>
                 <button className='customer-status'><img src={review} alt="" /> Review</button>

@@ -2,9 +2,9 @@ import React from 'react';
 import Header from '../Header/Header';
 import Services from '../Services/Services';
 import Reviews from '../Reviews/Reviews';
-// import Story from '../Story/Story';
-// import Employees from '../Employees/Employees';
-// import Footer from '../../Shared/Footer/Footer';
+import Story from '../Story/Story';
+import Employees from '../Employees/Employees';
+import Footer from '../../Shared/Footer/Footer';
 
 
 const Home = () => {
@@ -13,10 +13,10 @@ const Home = () => {
             <Header />
             <Services />
             <Reviews />
-            {/* 
+            
             <Story />
             <Employees />
-            <Footer /> */}
+            <Footer />
         </div>
     );
 };
