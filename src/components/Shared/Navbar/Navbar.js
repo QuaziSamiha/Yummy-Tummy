@@ -14,7 +14,8 @@ const Navbar = () => {
                     <div className='collapse navbar-collapse justify-content-end' id='navbarNav'>
                         <div className='navbar-nav'>
                             <Link className='nav-link m-2 link-brand' to="/home"><span id='home-span'>Home</span></Link>
-                            <Link className='nav-link m-2 link-brand' to="/checkOut"><span>Orders</span></Link>
+                            {/* <Link className='nav-link m-2 link-brand' to="/orders"><span>Orders</span></Link> */}
+                            <Link className='nav-link m-2 link-brand' to="/dashboard"><span>Dashboard</span></Link>
                             <Link className='nav-link m-2 link-brand' to="/admin"><span>Admin</span></Link>
                             <Link className='nav-link m-2 link-brand' to='/login'><span>Login</span></Link>
                         </div>

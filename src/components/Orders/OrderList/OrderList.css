@@ -1,0 +1,19 @@
+.order-manage {
+    margin-top: 110px;
+    padding: 10px 50px;
+    background-color: #c3f5ff;
+    width: 20%;
+    height: 100vh;
+}
+
+.order-manage button {
+    font-size: 20px;
+    color: darkslategrey;
+    font-weight: 600;
+    background-color: #c3f5ff;
+    border: none;
+}
+
+.order-manage button:hover {
+    color: #854fee;
+}

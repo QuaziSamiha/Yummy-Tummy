@@ -1,5 +1,6 @@
 import React from 'react';
 import './ServiceDetail.css';
+import { Link } from 'react-router-dom';
 
 const ServiceDetail = ({ serviceDetail }) => {
     return (
@@ -8,7 +9,7 @@ const ServiceDetail = ({ serviceDetail }) => {
                 <h5>{serviceDetail.title}</h5>
                 <img src={serviceDetail.img} alt="" className='img-fluid'/>
                 <p>{serviceDetail.description}</p>
-                <button>See Menu</button>
+                <Link to='/foods'><button>See Menu</button></Link>
             </div>
         </div>
     );

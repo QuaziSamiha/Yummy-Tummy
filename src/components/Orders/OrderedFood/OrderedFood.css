@@ -1,0 +1,26 @@
+.food-item {
+    border: gray 1px solid;
+    border-radius: 15px;
+    box-shadow: slategray 4px 4px 15px;
+    margin: 50px 20px;
+    padding: 15px;
+    box-sizing: border-box;
+    /* width: 280px; */
+    text-align: center;
+}
+
+.food-item img {
+    height: 200px;
+    width: 220px;
+    border-radius: 15px;
+}
+
+.food-item h6 {
+    margin-top: 10px;
+    color: darkslategrey;
+    font-weight: 800;
+}
+
+.food-item p {
+    color: slategrey;
+}
