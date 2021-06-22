@@ -22,7 +22,7 @@ const Sidebar = () => {
             <Link className='nav-link'>
                 <button className='customer-status'><img src={list} alt="" /> All Orders</button>
             </Link>
-            <Link className='nav-link'>
+            <Link to='/addService' className='nav-link'>
                 <button className='customer-status'><img src={add} alt="" /> Add Service</button>
             </Link>
             <Link className='nav-link'>

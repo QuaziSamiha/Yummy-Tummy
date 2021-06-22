@@ -13,6 +13,7 @@ import Foods from './components/Home/Foods/Foods/Foods';
 import OrderList from './components/Orders/OrderList/OrderList';
 import DashBoard from './components/DashBoard/DashBoard/DashBoard';
 import Review from './components/Orders/Review/Review';
+import AddServices from './components/Home/AddServices/AddServices';
 
 export const UserContext = createContext();
 
@@ -38,6 +39,9 @@ function App() {
           </Route>
           <Route path='/review'>
             <Review />
+          </Route>
+          <Route path='/addService'>
+            <AddServices />
           </Route>
           <PrivateRoute path='/admin'>
             <Admin />
