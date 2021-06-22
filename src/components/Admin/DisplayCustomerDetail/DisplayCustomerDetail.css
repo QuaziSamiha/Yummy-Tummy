@@ -1,0 +1,15 @@
+/* .customer-detail table {
+    margin-top: 150px; 
+    border-collapse: collapse;
+    width: 100%;
+} */
+
+td, th {
+    border: 3px solid violet;
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #c3ffaf;
+}

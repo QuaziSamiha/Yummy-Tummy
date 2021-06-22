@@ -19,7 +19,7 @@ const Sidebar = () => {
             <Link to='/review' className='nav-link'>
                 <button className='customer-status'><img src={review} alt="" /> Review</button>
             </Link>
-            <Link className='nav-link'>
+            <Link to='/allCustomerOrder' className='nav-link'>
                 <button className='customer-status'><img src={list} alt="" /> All Orders</button>
             </Link>
             <Link to='/addService' className='nav-link'>

@@ -6,14 +6,15 @@ import {
 } from "react-router-dom";
 import Home from './components/Home/Home/Home';
 import Login from './components/Login/Login';
-import Admin from './components/Admin/Admin';
 import { createContext, useState } from 'react';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import Foods from './components/Home/Foods/Foods/Foods';
 import OrderList from './components/Orders/OrderList/OrderList';
 import DashBoard from './components/DashBoard/DashBoard/DashBoard';
 import Review from './components/Orders/Review/Review';
-import AddServices from './components/Home/AddServices/AddServices';
+import AddServices from './components/Admin/AddServices/AddServices';
+import Admin from './components/Admin/Admin/Admin';
+import DisplayCustomerDetail from './components/Admin/DisplayCustomerDetail/DisplayCustomerDetail';
 
 export const UserContext = createContext();
 
@@ -42,6 +43,9 @@ function App() {
           </Route>
           <Route path='/addService'>
             <AddServices />
+          </Route>
+          <Route path='/allCustomerOrder'>
+            <DisplayCustomerDetail />
           </Route>
           <PrivateRoute path='/admin'>
             <Admin />

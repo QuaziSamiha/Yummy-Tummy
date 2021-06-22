@@ -3,7 +3,6 @@ import './AddServices.css';
 import Navbar from '../../Shared/Navbar/Navbar';
 import { useForm } from "react-hook-form";
 import axios from 'axios';
-import { faHtml5 } from '@fortawesome/free-brands-svg-icons';
 
 const AddServices = () => {
 
@@ -12,7 +11,6 @@ const AddServices = () => {
     const [addService, setAddService] = useState(false);
 
     const onSubmit = data => {
-        // console.log(data)
         const serviceDetail = {
             serviceName: data.serviceName,
             serviceDescription: data.description,
@@ -58,7 +56,6 @@ const AddServices = () => {
                     {errors.description && <span>This field is required</span>}
                     <br /><label style={{ color: 'grey' }}>Add Image</label>
                     <input type="file" {...register("foodImage", { required: true })} className='form-control' onChange={handleImageUpload} />
-                    {/* {errors.foodImage && <span>This field is required</span>} */}
                     <input type="submit" value="Add Service" className='add-btn' onClick={() => setAddService(true)} />
                 </form>
             </div>
