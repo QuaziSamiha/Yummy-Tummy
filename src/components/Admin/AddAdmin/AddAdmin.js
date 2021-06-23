@@ -11,7 +11,7 @@ const AddAdmin = () => {
     const onSubmit = data => {
         // console.log(data);
 
-        fetch('http://localhost:5050/addAdmin', {
+        fetch('https://fathomless-temple-48746.herokuapp.com/addAdmin', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

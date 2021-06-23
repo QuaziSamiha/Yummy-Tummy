@@ -7,7 +7,7 @@ const DisplayCustomerDetail = () => {
     const [allCustomerDetail, setAllCustomerDetail] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5050/customerDetail')
+        fetch('https://fathomless-temple-48746.herokuapp.com/customerDetail')
             .then(res => res.json())
             .then(data => {
                 setAllCustomerDetail(data);

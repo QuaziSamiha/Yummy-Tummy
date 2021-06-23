@@ -15,7 +15,7 @@ const Review = () => {
         // console.log(data);
         setPostReview(true);
 
-        fetch('http://localhost:5050/postReview', {
+        fetch('https://fathomless-temple-48746.herokuapp.com/postReview', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

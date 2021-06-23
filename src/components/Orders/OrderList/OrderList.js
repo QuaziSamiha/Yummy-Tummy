@@ -12,7 +12,7 @@ const Orders = () => {
     const [orderList, setOrderList] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5050/customerOrderList?email=${loggedInUser.email}`)
+        fetch(`https://fathomless-temple-48746.herokuapp.com/customerOrderList?email=${loggedInUser.email}`)
             .then(res => res.json())
             .then(data => {
                 setOrderList(data);

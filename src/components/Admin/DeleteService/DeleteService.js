@@ -7,7 +7,7 @@ const DeleteService = ({ service }) => {
 
     const handleDeleteService = (serviceId) => {
         // console.log(serviceId);
-        fetch(`http://localhost:5050/deleteService/${serviceId}`, {
+        fetch(`https://fathomless-temple-48746.herokuapp.com/deleteService/${serviceId}`, {
             method: 'DELETE'
         })
             .then(res => res.json())

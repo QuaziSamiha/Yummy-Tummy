@@ -8,7 +8,7 @@ const ManageService = () => {
     const [allServices, setAllServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5050/allServices')
+        fetch('https://fathomless-temple-48746.herokuapp.com/allServices')
             .then(res => res.json())
             .then(data => {
                 setAllServices(data);

@@ -11,7 +11,7 @@ const Food = ({ food }) => {
 
         const orderedDetail = { ...orderedFood, ...customer };
 
-        fetch('http://localhost:5050/addFoodOrder', {
+        fetch('https://fathomless-temple-48746.herokuapp.com/addFoodOrder', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
