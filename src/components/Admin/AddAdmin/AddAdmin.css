@@ -1,0 +1,14 @@
+.add-admin {
+    background-color: #c3f5ff;
+    margin: 150px;
+    padding: 50px 200px;
+}
+
+.admin-btn {
+    color: #fff;
+    background-image: linear-gradient(#8d98e3 40%, #854fee 60%);
+    border: none;
+    border-radius: 10px;
+    padding: 10px 50px;
+    font-weight: 500;
+}

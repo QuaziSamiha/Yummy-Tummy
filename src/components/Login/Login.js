@@ -20,6 +20,7 @@ const Login = () => {
     const [user, setUser] = useState({
         isSignedIn: false,
         userName: '',
+        // userType: '',
         email: ''
     });
 
@@ -34,6 +35,7 @@ const Login = () => {
             .then((result) => {
                 const signedInnUser = {
                     userName: result.user.displayName,
+                    // userType: 'Customer',
                     email: result.user.email,
                     isSignedIn: true
                 }
