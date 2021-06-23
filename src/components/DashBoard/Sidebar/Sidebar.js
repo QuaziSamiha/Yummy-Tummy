@@ -53,7 +53,7 @@ const Sidebar = () => {
                         <Link to='/addAdmin' className='nav-link'>
                             <button className='customer-status'><img src={add} alt="" /> Add Admin</button>
                         </Link>
-                        <Link className='nav-link'>
+                        <Link to='/manageService' className='nav-link'>
                             <button className='customer-status'><img src={manage} alt="" /> Manage Service</button>
                         </Link>
                     </div>

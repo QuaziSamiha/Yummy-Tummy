@@ -1,0 +1,15 @@
+.manage-service {
+    margin-top: 200px;
+    padding-top: 50px;
+    background-color: #c3f5ff;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+    .manage-service {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

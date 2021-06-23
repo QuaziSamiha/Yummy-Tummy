@@ -15,6 +15,7 @@ import Review from './components/Orders/Review/Review';
 import AddServices from './components/Admin/AddServices/AddServices';
 import DisplayCustomerDetail from './components/Admin/DisplayCustomerDetail/DisplayCustomerDetail';
 import AddAdmin from './components/Admin/AddAdmin/AddAdmin';
+import ManageService from './components/Admin/ManageService/ManageService';
 
 export const UserContext = createContext();
 
@@ -49,6 +50,9 @@ function App() {
           </Route>
           <Route path='/addAdmin'>
             <AddAdmin/>
+          </Route>
+          <Route path='/manageService'>
+            <ManageService/>
           </Route>
           <Route path='/login'>
             <Login />

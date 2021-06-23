@@ -16,7 +16,7 @@ const Navbar = () => {
                             <Link className='nav-link m-2 link-brand' to="/home"><span id='home-span'>Home</span></Link>
                             {/* <Link className='nav-link m-2 link-brand' to="/orders"><span>Orders</span></Link> */}
                             <Link className='nav-link m-2 link-brand' to="/dashboard"><span>Dashboard</span></Link>
-                            <Link className='nav-link m-2 link-brand' to="/admin"><span>Admin</span></Link>
+                            {/* <Link className='nav-link m-2 link-brand' to="/admin"><span>Admin</span></Link> */}
                             <Link className='nav-link m-2 link-brand' to='/login'><span>Login</span></Link>
                         </div>
                     </div>
